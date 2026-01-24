@@ -5016,3 +5016,11 @@ offset_bottom = -136.0
 text = "You have collected X points"
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="ScorePanel" type="Panel" parent="HUD"]
+offset_left = 82.0
+offset_top = -81.0
+offset_right = 143.0
+offset_bottom = -59.0

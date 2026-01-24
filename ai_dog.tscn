@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://k3v6ujakg31g"]
+
+[ext_resource type="Texture2D" uid="uid://c4jfpkatnrwem" path="res://assets/sprites/enemy.png" id="1_3nx2b"]
+[ext_resource type="Script" uid="uid://b8y1pqwlihw81" path="res://scrypts/ai_dog.gd" id="1_gcbum"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gcbum"]
+size = Vector2(13, 12)
+
+[node name="AIDog" type="CharacterBody2D"]
+script = ExtResource("1_gcbum")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3nx2b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_gcbum")
